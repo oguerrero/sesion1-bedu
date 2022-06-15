@@ -5,7 +5,7 @@
 body {
     height: 100vh;
     background-color: #fffbf7;
-    font-family: Verdana;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -22,3 +22,67 @@ button {
     background-color: #025157;
     color: #fff;
 }
+
+header {    
+    margin: 0 20px 0;
+    font-size: 0;
+    font-family: sans-serif;
+}
+  
+header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+}
+
+li {
+    display: inline;
+    color: #025157;
+    margin: 0 25px;
+}
+
+nav {
+    width: 70%;
+    text-align: left;
+    color: #025157;
+    font-weight: 500;
+}
+
+main {
+    padding: 0.5em 2.5em;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logo > img {
+    width: 25%;
+}
+  
+.actions {
+    width: 15%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.actions > * {
+    margin: 0 10px;
+  }
+  
+.actions a {
+    color: #67b54b;
+    text-decoration: none;
+}
+
+.actions button {
+    color: white;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border: 0;
+    border-radius: 5px;
+  }
+  
