@@ -9,6 +9,7 @@ body {
 }
 
 h1 {
+  font-size: 60px;
   color: #025157;
   text-align: center;
 }
@@ -52,18 +53,19 @@ li {
 }
 
 nav {
-  width: 70%;
+  width: 100%;
   text-align: left;
   color: #025157;
   font-weight: 500;
 }
 
 main {
+  margin-top: 100px;
   padding: 0.5em 2.5em;
 }
 
 .logo {
-  width: 15%;
+  width: 20%;
 }
 
 .logo > img {
@@ -71,7 +73,7 @@ main {
 }
 
 .actions {
-  width: 15%;
+  width: 20%;
   text-align: right;
   font-size: 14px;
   font-weight: 600;
@@ -89,7 +91,7 @@ main {
 .actions button {
   color: white;
   background-color: #67b54b;
-  padding: 12px 14px;
+  padding: 4px 14px;
   border: 0;
   border-radius: 5px;
 }
@@ -164,12 +166,12 @@ main {
 
 .container > a {
   color: #69c747;
-  font-size: .8rem;
-  font-weight: bold
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .container > p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .container > img {
@@ -178,28 +180,89 @@ main {
   margin-left: 50px;
 }
 
-.back1{
+.back1 {
   background-image: url(img2.png);
-  background-position: 103% 50%;;
+  background-position: 103% 50%;
   background-size: 8rem;
   background-repeat: no-repeat;
 }
 
-.back2{
+.back2 {
   background-image: url(img4.png);
-  background-position: 103% 50%;;
+  background-position: 103% 50%;
   background-size: 8rem;
   background-repeat: no-repeat;
 }
-.back3{
+.back3 {
   background-image: url(img3.png);
-  background-position: 103% 50%;;
+  background-position: 103% 50%;
   background-size: 8rem;
   background-repeat: no-repeat;
 }
-.back4{
+.back4 {
   background-image: url(img2.png);
-  background-position: 103% 50%;;
+  background-position: 103% 50%;
   background-size: 8rem;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+  nav,
+  .actions {
+    display: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  .banner > img {
+    width: 100%;
+  }
+
+  .publish > form {
+    flex-direction: column;
+  }
+
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .publish > form > div > input {
+    width: 65%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .explanatory-video > video {
+    width: 100%;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .features-img {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) {
 }
