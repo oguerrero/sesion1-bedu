@@ -57,6 +57,7 @@ nav {
   text-align: left;
   color: #025157;
   font-weight: 500;
+  background-color: #025157;
 }
 
 main {
@@ -149,13 +150,13 @@ main {
   padding: 10em;
 }
 
-.container {
-  align-items: center;
-  justify-content: center;
+.cont {
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 55%;
 }
 
-.card {
+.carta {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
@@ -164,17 +165,17 @@ main {
   text-align: left;
 }
 
-.container > a {
+.cont > a {
   color: #69c747;
   font-size: 0.8rem;
   font-weight: bold;
 }
 
-.container > p {
+.cont > p {
   font-size: 0.8rem;
 }
 
-.container > img {
+.cont > img {
   height: 70px;
   width: 50px;
   margin-left: 50px;
@@ -204,6 +205,138 @@ main {
   background-position: 103% 50%;
   background-size: 8rem;
   background-repeat: no-repeat;
+}
+
+.success-stories {
+  background-color: #a1d683;
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.success-stories .overview {
+  flex: 2;
+  padding-right: 100px;
+}
+.success-stories .overview h2 {
+  font-size: 51px;
+  line-height: 61px;
+  color: #025157;
+}
+.success-stories .overview p {
+  color: #343434;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.success-stories .overview button {
+  padding: 12px 12px 6px 12px;
+  border-radius: 8px;
+  height: 45px;
+  font-weight: 600;
+  margin-left: 0;
+}
+.success-stories .overview img {
+  width: 500px;
+  max-width: 100%;
+}
+
+.success-stories .stories-carousel {
+  flex: 1;
+}
+
+.success-stories .stories-carousel .carousel-indicators {
+  position: unset;
+}
+
+.success-stories .stories-carousel .card {
+  max-width: 370px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.success-stories .stories-carousel .card .card-media img {
+  width: 100%;
+  max-height: 16vw;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.success-stories .stories-carousel .card .card-media figure {
+  margin-top: 0;
+}
+
+.success-stories .stories-carousel .card .card-media {
+  position: relative;
+}
+
+.success-stories .stories-carousel .card .card-media .company {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: #f9da73;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-stories .stories-carousel .card .card-media .company img {
+  max-width: 75%;
+}
+
+.success-stories .stories-carousel .card .card-body,
+.success-stories .stories-carousel .card .card-footer {
+  padding: 25px;
+}
+
+.success-stories .stories-carousel .card .card-body h4 {
+  color: #025157;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.success-stories .stories-carousel .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.success-stories .stories-carousel .card .card-body .results {
+  display: flex;
+  align-items: center;
+  color: #828282;
+}
+
+.success-stories .stories-carousel .card .card-body .results img {
+  width: 26px;
+  margin-right: 20px;
+}
+
+.success-stories .stories-carousel .card .card-body .results p {
+  margin-top: 0;
+}
+
+.success-stories .stories-carousel .card .card-footer {
+  margin-bottom: 20px;
+  background-color: unset;
+  border-top: unset;
+}
+
+.success-stories .stories-carousel .card .card-footer button {
+  display: block;
+  margin-left: 0;
+  border-radius: 5px;
+  font-size: 13;
+  font-weight: 600;
+  padding: 12px 20px;
+  width: 100%;
 }
 
 @media (min-width: 200px) and (max-width: 767px) {
