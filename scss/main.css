@@ -59,6 +59,16 @@
   color: #4a4a4a;
   font-size: 24px;
 }
+.blog .card-text {
+  color: #4a4a4a;
+  font-size: 18px;
+}
+.blog .card-text .read-more {
+  display: block;
+}
+.blog .card-text a {
+  text-decoration: underline;
+}
 .blog .author img {
   width: 40px;
   height: 40px;

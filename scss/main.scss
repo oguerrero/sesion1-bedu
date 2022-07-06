@@ -1,5 +1,5 @@
 /** main.scss */
-@use 'global' as *;
+@use "global" as *;
 
 .blog {
   background-color: $white;
@@ -54,13 +54,13 @@
   .metadata {
     font-size: 14px;
 
-      .category {
-        color: $green-text;
-      }
-    
-      .read-time {
-        color: $light-gray-text;
-      }
+    .category {
+      color: $green-text;
+    }
+
+    .read-time {
+      color: $light-gray-text;
+    }
   }
 
   .card-title {
@@ -68,18 +68,31 @@
     font-size: 24px;
   }
 
+  .card-text {
+    color: $gray;
+    font-size: 18px;
+
+    .read-more {
+      display: block;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
   .author {
     img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
     }
-    
+
     p {
-        display: inline-block;
-        font-size: 14px;
-        color: $gray;
-        font-weight: bold;
+      display: inline-block;
+      font-size: 14px;
+      color: $gray;
+      font-weight: bold;
     }
   }
 }
